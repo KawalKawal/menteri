@@ -1,0 +1,13 @@
+<div>
+  <a href="#/kawal">Kembali</a>
+  <h2>{{ name }}</h2>
+
+  <span ng-show="loading">Memuat...</span>
+
+  <span ng-show="candidates.length == 0">Belum ada kandidat</span>
+  <ul>
+    <li ng-repeat="candidate in candidates">
+      <a href="#/kawal/inspect/{{candidate}}">{{ candidate }}</a>
+    </li>
+  </ul>
+</div>

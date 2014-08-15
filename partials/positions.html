@@ -1,0 +1,9 @@
+<div>
+  <h2>Posisi</h2>
+  <span ng-show="loading">Memuat...</span>
+  <ul>
+    <li ng-repeat="position in positions">
+      <a href="#/kawal/{{position}}">{{ position }}</a>
+    </li>
+  </ul>
+</div>

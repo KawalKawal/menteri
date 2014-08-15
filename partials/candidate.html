@@ -1,0 +1,15 @@
+<div>
+  <a href="" ng-click="back()">Kembali</a>
+  <h2>{{ name }}</h2>
+  <span ng-show="loading">Memuat...</span>
+  <ul>
+    <li ng-repeat="link in links">
+      <a href="{{link.link}}" target="_blank">{{ link.title }}</a>
+    </li>
+  </ul>
+  
+  <p ng-repeat="image in images">
+    <img src="{{image.url}}" />
+  </p>
+  
+</div>
