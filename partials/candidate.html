@@ -1,6 +1,7 @@
 <div>
-  <a href="" ng-click="back()">Kembali</a>
+  <a href="#/kawal/{{params.cat}}" >Kembali</a>
   <h2>{{ name }}</h2>
+  
   <span ng-show="loading">Memuat...</span>
   <ul>
     <li ng-repeat="link in links">

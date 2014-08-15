@@ -14,7 +14,7 @@ kawalApp.config(['$routeProvider',
         templateUrl: 'partials/candidates.html',
         controller: 'CandidatesCtrl'
       }).
-      when('/kawal/inspect/:name', {
+      when('/kawal/inspect/:name/:cat', {
         templateUrl: 'partials/candidate.html',
         controller: 'CandidateCtrl'
       }).

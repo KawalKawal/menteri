@@ -35,6 +35,7 @@ kawalCtrls.controller('CandidatesCtrl', ['$scope', '$http', '$routeParams', func
 kawalCtrls.controller('CandidateCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
   $scope.list = function(){
     $scope.loading = true;
+    $scope.params = $routeParams;
     $scope.name = $routeParams.name;
     $http.get(rootUrl + '/kawal/inspect/' + $routeParams.name)
     .success(function(res){
@@ -47,8 +48,4 @@ kawalCtrls.controller('CandidateCtrl', ['$scope', '$http', '$routeParams', funct
     });
   }
   $scope.list();
-
-  $scope.back = function(){
-    window.history.back();
-  }
 }]);
