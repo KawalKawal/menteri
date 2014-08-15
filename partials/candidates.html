@@ -3,8 +3,8 @@
   <h2>{{ name }}</h2>
 
   <span ng-show="loading">Memuat...</span>
-
   <span ng-show="candidates.length == 0">Belum ada kandidat</span>
+  <a href="{{ link }}" ng-show="!loading" target="_blank">Usulkan kandidat baru</a>
   <ul>
     <li ng-repeat="candidate in candidates">
       <a href="#/kawal/inspect/{{candidate}}/{{name}}">{{ candidate }}</a>
